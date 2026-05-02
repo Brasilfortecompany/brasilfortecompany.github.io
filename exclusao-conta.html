@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Excluir Conta — MotoCopilot</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0a0f1a;
+      --surface: #111827;
+      --accent: #f97316;
+      --text: #e5e7eb;
+      --muted: #6b7280;
+      --border: #1f2937;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'IBM Plex Sans', sans-serif;
+      font-weight: 300;
+      line-height: 1.8;
+      min-height: 100vh;
+    }
+    header {
+      border-bottom: 1px solid var(--border);
+      padding: 2rem 0;
+      background: var(--surface);
+    }
+    .container { max-width: 700px; margin: 0 auto; padding: 0 2rem; }
+    .logo {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 2rem;
+      letter-spacing: 0.1em;
+      color: var(--accent);
+    }
+    .logo span { color: var(--text); }
+    main { padding: 4rem 0; }
+    h1 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 3rem;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.5rem;
+    }
+    .subtitle {
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin-bottom: 3rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+    }
+    h2 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.3rem;
+      letter-spacing: 0.1em;
+      color: var(--accent);
+      margin-bottom: 1rem;
+    }
+    p { color: #d1d5db; font-size: 0.95rem; margin-bottom: 0.75rem; }
+    ol {
+      padding-left: 1.5rem;
+      color: #d1d5db;
+      font-size: 0.95rem;
+    }
+    ol li { margin-bottom: 0.5rem; }
+    .email-btn {
+      display: inline-block;
+      margin-top: 1.5rem;
+      background: var(--accent);
+      color: #000;
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.1rem;
+      letter-spacing: 0.1em;
+      padding: 0.75rem 2rem;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: opacity 0.2s;
+    }
+    .email-btn:hover { opacity: 0.85; }
+    .warning {
+      background: rgba(249, 115, 22, 0.08);
+      border-left: 3px solid var(--accent);
+      padding: 1rem 1.5rem;
+      border-radius: 0 6px 6px 0;
+      margin: 1.5rem 0;
+    }
+    .warning p { color: #d1d5db; margin: 0; }
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 2rem 0;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+    a { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">Moto<span>Copilot</span></div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <h1>Excluir Conta</h1>
+      <p class="subtitle">Solicitação de exclusão de conta e dados pessoais — Brasil Forte Serviços e Consultoria Ltda</p>
+
+      <div class="card">
+        <h2>Como solicitar a exclusão</h2>
+        <p>Para excluir sua conta e todos os dados associados ao MotoCopilot, siga os passos abaixo:</p>
+        <ol>
+          <li>Envie um e-mail para <strong>brasilforte.empresa@gmail.com</strong></li>
+          <li>Use o assunto: <strong>"Exclusão de conta MotoCopilot"</strong></li>
+          <li>Informe o e-mail cadastrado na sua conta</li>
+          <li>Aguarde a confirmação em até <strong>5 dias úteis</strong></li>
+        </ol>
+
+        <a href="mailto:brasilforte.empresa@gmail.com?subject=Exclusão de conta MotoCopilot&body=Olá, gostaria de solicitar a exclusão da minha conta e dados pessoais do MotoCopilot.%0A%0AE-mail cadastrado: " class="email-btn">
+          Enviar solicitação por e-mail
+        </a>
+      </div>
+
+      <div class="card">
+        <h2>O que será excluído</h2>
+        <p>Ao confirmar a exclusão da sua conta, os seguintes dados serão removidos permanentemente:</p>
+        <ol>
+          <li>Dados de perfil (nome e e-mail)</li>
+          <li>Histórico de checklists e viagens</li>
+          <li>Configurações e preferências do app</li>
+          <li>Dados de assinatura (o cancelamento deverá ser feito separadamente na loja)</li>
+        </ol>
+      </div>
+
+      <div class="warning">
+        <p>⚠️ <strong>Atenção:</strong> A exclusão da conta é permanente e irreversível. Dados de transações financeiras podem ser mantidos por até 5 anos conforme exigência fiscal brasileira (Lei nº 9.613/98).</p>
+      </div>
+
+      <div class="card">
+        <h2>Cancelar assinatura</h2>
+        <p>Para cancelar apenas a assinatura (sem excluir a conta), acesse as configurações da loja onde realizou a compra:</p>
+        <ol>
+          <li><strong>Android:</strong> Google Play → Assinaturas → MotoCopilot → Cancelar</li>
+          <li><strong>iOS:</strong> Ajustes → Apple ID → Assinaturas → MotoCopilot → Cancelar</li>
+        </ol>
+      </div>
+
+      <p style="color: var(--muted); font-size: 0.85rem;">
+        Para mais informações sobre como tratamos seus dados, consulte nossa
+        <a href="/privacidade.html">Política de Privacidade</a>.
+      </p>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 Brasil Forte Serviços e Consultoria Ltda — MotoCopilot</p>
+    </div>
+  </footer>
+</body>
+</html>
